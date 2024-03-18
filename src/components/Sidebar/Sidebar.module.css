@@ -1,0 +1,32 @@
+.wrapper {
+    margin: 0 20px;
+    font-weight: 500;
+    background: var(--background-grey);
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header {
+    color: var(--primary-green);
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: larger;
+}
+
+.wrapper ul {
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper ul li {
+    margin-bottom: 20px;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-green); 
+    text-decoration-thickness: 4px;
+}
