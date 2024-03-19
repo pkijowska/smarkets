@@ -10,13 +10,13 @@ function CategoryLayout({ children }: { children: React.ReactNode }) {
     CATEGORIES.find((c) => pathname.includes(c.slug))?.label || "Football";
 
   return (
-    <main>
-      <h1 className={style.header}>Upcoming {category} events</h1>
+    <>
+      <h1 className={style.header}>Upcoming {category} Events</h1>
       <div className={style.wrapper}>
         <Sidebar selectedCategory={category} />
         {children}
       </div>
-    </main>
+    </>
   );
 }
 

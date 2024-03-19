@@ -1,4 +1,6 @@
-export async function getEvents(category: string) {
+import { Events, EventDetails } from "@/types/types";
+
+export async function getEvents(category: string): Promise<Events> {
     try {
       const response = await fetch(
         `https://api.smarkets.com/v3/events/?state=upcoming&type=${category}_match&type_domain=${category}&type_scope=single_event&with_new_type=false&sort=id&limit=20&include_hidden=false`
@@ -10,11 +12,11 @@ export async function getEvents(category: string) {
       const data = await response.json();
       return data;
     } catch (error) {
-      throw new Error("Error during fetch");
+      throw new Error("Error during fetch: " + (error as Error).message);
     }
 }
 
-export const getEventDetails = async (id: string) => {
+export const getEventDetails = async (id: string): Promise<EventDetails> => {
     try {
       const response = await fetch(
         `https://api.smarkets.com/v3/events/${id}/states/`
@@ -25,6 +27,6 @@ export const getEventDetails = async (id: string) => {
       const data = await response.json();
       return data;
     } catch (error) {
-        throw new Error("Error during fetch");
+      throw new Error("Error during fetch: " + (error as Error).message);
     }
 };

@@ -19,6 +19,7 @@
 
 body {
   background: var(--background-black);
+  color: var(--color-white);
 }
 
 .error {
@@ -26,8 +27,31 @@ body {
   text-align: center;
 }
 
-.grey-emoji {
-  filter: grayscale(90%);
+h3 {
+  font-size: larger;
+  font-weight: 800;
+}
+
+.card-base {
+  font-weight: 500;
+  background: var(--background-grey);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  border-top: 1px solid var(--secondary-green);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 

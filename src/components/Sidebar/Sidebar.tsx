@@ -14,8 +14,17 @@ const Sidebar = ({ selectedCategory }: { selectedCategory: string }) => {
                 <Link
                   href={`/events/${slug}`}
                   className={label === selectedCategory ? styles.active : ""}
+                  data-testid={
+                    label === selectedCategory ? "active" : "inactive"
+                  }
                 >
-                  <span className="grey-emoji">{emoji}</span> {label}
+                  <span
+                    aria-hidden="true"
+                    className={label === selectedCategory ? "" : styles.emoji}
+                  >
+                    {emoji}
+                  </span>{" "}
+                  {label}
                 </Link>
               </li>
             );

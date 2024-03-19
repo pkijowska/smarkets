@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryPage matches the snapshot 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="card card-base"
+    >
+      <div
+        class="innerCard"
+      >
+        <h3>
+          Pinar Karsiyaka vs Hapoel Jerusalem
+        </h3>
+        <p />
+        <p>
+          19 Mar 2024 17:30 GMT
+        </p>
+      </div>
+      <a
+        href="/events/Football/43724399"
+      >
+        &gt;
+         View event
+      </a>
+    </div>
+  </div>
+</div>
+`;

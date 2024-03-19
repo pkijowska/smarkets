@@ -1,4 +1,23 @@
 .header {
     padding: 18px 32px;
     border-bottom: 5px solid var(--background-grey);
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0px 20px;
+}
+
+.links {
+    display: flex;
+    align-items: flex-end;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    };
 }

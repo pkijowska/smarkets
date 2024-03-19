@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategorySidebar matches the snapshot 1`] = `
+<div>
+  <aside
+    class="wrapper"
+  >
+    <nav>
+      <h2
+        class="header"
+      >
+        Categories
+      </h2>
+      <ul>
+        <li>
+          <a
+            class="active"
+            data-testid="active"
+            href="/events/football"
+          >
+            <span
+              aria-hidden="true"
+              class=""
+            >
+              ⚽️
+            </span>
+             
+            Football
+          </a>
+        </li>
+        <li>
+          <a
+            class=""
+            data-testid="inactive"
+            href="/events/tennis"
+          >
+            <span
+              aria-hidden="true"
+              class="emoji"
+            >
+              🎾
+            </span>
+             
+            Tennis
+          </a>
+        </li>
+        <li>
+          <a
+            class=""
+            data-testid="inactive"
+            href="/events/basketball"
+          >
+            <span
+              aria-hidden="true"
+              class="emoji"
+            >
+              🏀
+            </span>
+             
+            Basketball
+          </a>
+        </li>
+        <li>
+          <a
+            class=""
+            data-testid="inactive"
+            href="/events/baseball"
+          >
+            <span
+              aria-hidden="true"
+              class="emoji"
+            >
+              ⚾️
+            </span>
+             
+            Baseball
+          </a>
+        </li>
+        <li>
+          <a
+            class=""
+            data-testid="inactive"
+            href="/events/rugby_union"
+          >
+            <span
+              aria-hidden="true"
+              class="emoji"
+            >
+              🏉
+            </span>
+             
+            Rugby Union
+          </a>
+        </li>
+        <li>
+          <a
+            class=""
+            data-testid="inactive"
+            href="/events/boxing"
+          >
+            <span
+              aria-hidden="true"
+              class="emoji"
+            >
+              🥊
+            </span>
+             
+            Boxing
+          </a>
+        </li>
+        <li>
+          <a
+            class=""
+            data-testid="inactive"
+            href="/events/cricket"
+          >
+            <span
+              aria-hidden="true"
+              class="emoji"
+            >
+              🏏
+            </span>
+             
+            Cricket
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+</div>
+`;

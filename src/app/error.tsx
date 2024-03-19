@@ -13,9 +13,9 @@ export default function Error({
   }, [error]);
 
   return (
-    <div>
+    <>
       <h2 className="error">Something went wrong!</h2>
-      <p>{error.message}</p>
-    </div>
+      <p className="error">{error.message}</p>
+    </>
   );
 }

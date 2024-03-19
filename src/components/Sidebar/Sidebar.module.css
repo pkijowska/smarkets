@@ -16,7 +16,6 @@
 }
 
 .wrapper ul {
-    color: var(--color-white);
     display: flex;
     flex-direction: column;
 }
@@ -29,4 +28,8 @@
     text-decoration: underline;
     text-decoration-color: var(--primary-green); 
     text-decoration-thickness: 4px;
+}
+
+.emoji {
+    filter: grayscale(90%);
 }
